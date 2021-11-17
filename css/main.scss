@@ -1,0 +1,155 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Oswald:wght@200;300;400;500;600&display=swap');
+
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: #34ffd0;
+}
+
+body {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background: rgb(14, 14, 14);
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.wrapper {
+    width: 1200px;
+
+
+    //헤더영역 시작
+    .header {
+        width: 100%;
+        padding: 10px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .logoA {
+            font-size: 2rem;
+            font-weight: bolder;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #b4ffed;
+            &:hover{
+                color: #fff;
+                transform:scale(1);
+                transition: all 0.5s;
+            }
+        }
+
+        ul {
+            width: 70%;
+            display: flex;
+            justify-content: space-around;
+
+            li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                a {
+                    color: #34ffd0;
+                    font-weight: 500;
+                    font-size: 1.1rem;
+                    &:hover{
+                        color: #fff;
+                        transform:scale(1);
+                        transition: all 0.5s;
+                    }
+                }
+
+            }
+        }
+    }
+
+    //헤더영역 끝
+
+    //푸터영역 시작
+    .footer {
+        width: 100%;
+        background: rgb(22, 22, 22);
+        -webkit-box-shadow: -3px -1px 14px 1px rgba(0, 0, 0, 0.534), -3px -1px 14px 1px rgba(0, 0, 0, 0.534);
+        box-shadow: -3px -1px 14px 1px rgba(0, 0, 0, 0.534), -3px -1px 14px 1px rgba(0, 0, 0, 0.534);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: #fff;
+        padding: 70px 0 30px;
+        border-radius: 125px 0 0 0;
+        font-size: 13px;
+
+        .contWrap {
+            padding: 0 30px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            .cont {
+                margin: 0px 20px;
+
+                .logoA {
+                    font-size: 2rem;
+                    font-weight: bolder;
+                    height: auto;
+                    color: #b4ffed;
+                }
+
+                h3 {
+                    width: 100%;
+                    font-size: 1.1rem;
+                    position: relative;
+                    margin: 25px 0;
+
+                    .underLine {
+                        margin: 5px 0;
+                        width: 100%;
+                        height: 5px;
+                        background: #647a75;
+                        border-radius: 3px;
+                        position: absolute;
+                        top: 25px;
+                        left: 0;
+                        overflow: hidden;
+
+                        span {
+                            width: 15px;
+                            height: 100%;
+                            background: #34ffd0;
+                            border-radius: 3px;
+                            position: absolute;
+                            top: 0;
+                            left: 10px;
+                            animation: moving 2s linear infinite;
+                        }
+                    }
+                }
+
+                p {
+                    margin: 10px 0;
+                }
+            }
+        }
+    }
+
+    //푸터영역 끝
+
+}
+
+@keyframes moving {
+    0% {
+        left: -20px;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
