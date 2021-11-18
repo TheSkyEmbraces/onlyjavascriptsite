@@ -82,19 +82,21 @@ body {
         bottom: 0;
         left: 0;
         color: #fff;
-        padding: 70px 0 30px;
+        padding: 50px 0 30px;
         border-radius: 125px 0 0 0;
         font-size: 13px;
 
         .contWrap {
-            padding: 0 30px;
-            width: 100%;
+            width: 80%;
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
             justify-content: space-around;
+            margin: 0 auto;
 
             .cont {
                 margin: 0px 20px;
+                flex-basis: 20%;
 
                 .logoA {
                     font-size: 2rem;
@@ -104,7 +106,7 @@ body {
                 }
 
                 h3 {
-                    width: 100%;
+                    // width: 100%;
                     font-size: 1.1rem;
                     position: relative;
                     margin: 25px 0;
@@ -136,7 +138,80 @@ body {
                 p {
                     margin: 10px 0;
                 }
+                .footerNav{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    li{
+                        list-style-type: disc;
+                        margin: 3px 15px;
+                    }
+                }
+
+
+                form {
+                    padding-bottom: 15px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    border-bottom: 1px solid #34ffd0;
+                    margin-bottom: 30px;
+
+                    .far {
+                        font-size: 18px;
+                        margin-right: 10px;
+
+                    }
+
+                    input {
+                        width: 100%;
+                        background: transparent;
+                        color: #34ffd0;
+                        border: 0;
+                        outline: none;
+                    }
+
+                    button {
+                        background: transparent;
+                        border: 0;
+                        outline: none;
+                        cursor: pointer;
+
+                        .fas {
+                            font-size: 16px;
+                            color: #34ffd0;
+                        }
+                    }
+                }
+
+                .iconWrap {
+                    display: flex;
+                    justify-content: space-around;
+                    .fab {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        text-align: center;
+                        line-height: 40px;
+                        font-size: 20px;
+                        color: #34ffd0;
+                        background: #000;
+                        cursor: pointer;
+                    }
+                }
             }
+
+        }
+
+        hr {
+            width: 90%;
+            border: 0;
+            border-bottom: 1px solid #34ffd0;
+            margin: 20px auto;
+        }
+
+        .Copy{
+            text-align: center;
         }
     }
 

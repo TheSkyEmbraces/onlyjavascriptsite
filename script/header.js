@@ -1,6 +1,7 @@
 const navWrapper = document.querySelector(".header");
 const navUl = document.createElement("ul");
 
+//메뉴를 담은 오브젝트배열
 const navCont = [
   {
     name: "민트",
